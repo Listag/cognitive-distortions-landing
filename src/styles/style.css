@@ -1,7 +1,29 @@
 /** CSS STYLE **/
-
-.hello {
-  display: block;
-
-  color: #fff;
+:root {
+  /** Цвета **/
+  --white: #fff;
+  --translucent-white: #d7ccc0;
+  --light: #f5f4f0;
+  --main: #fe8a02;
+  --main-dark: #42413c;
+  --dark: #2a2626;
+  --translucent-dark: #908d8b;
+  --brown: #b09a81;
+  --blue: #1085c5;
+  /** Шрифты **/
+  --main-font: "Open Sans";
+  --header-font: "Neucha";
+  --font-size: 16px;
+  --font-line-height: 1.6em;
+  --text-color: #2A2626;
+  /** Заголовки **/
+  --header-line-height: 1.2em;
+  --h1-size: 72px;
+  --h2-size: 60px;
+  --h3-size: 34px;
+  /** Секции **/
+  --max-content-width: 1110px;
+  --text-align: center;
+  --margin: 100px 0;
 }
+
