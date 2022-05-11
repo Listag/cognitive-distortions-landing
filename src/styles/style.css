@@ -40,10 +40,6 @@
   --h1-size: 72px;
   --h2-size: 60px;
   --h3-size: 34px;
-  /* Секции */
-  --max-content-width: 1110px;
-  --text-align: center;
-  --margin: 100px 0;
 }
 
 /* Стили браузера  */
@@ -66,7 +62,7 @@ h4 {
 body {
   padding: 0;
   margin: 0;
-
+  overflow-x: hidden;
   color: var(--text);
   font-size: var(--font-size);
   font-family: var(--main-font);
@@ -78,12 +74,13 @@ h3 {
   z-index: 1;
   font-family: var(--header-font);
   font-weight: 400;
-  line-height: 1.2em;
+  line-height: var(--header-line-height);
   color: var(--main);
 }
 
 .background {
   position: relative;
+  background-attachment: fixed;
 }
 
 .background::before {
@@ -103,6 +100,7 @@ h3 {
 
 .container {
   position: relative;
+  width: 1110px;
 
   display: flex;
   flex-direction: column;
@@ -130,7 +128,7 @@ h3 {
   margin-right: 30px;
 }
 
-.dark {
+.dark-text {
   color: var(--dark);
 }
 
@@ -144,6 +142,12 @@ h2 {
 
 h3 {
   font-size: var(--h3-size);
+}
+
+p {
+  font-size: var(--font-size);
+  line-height: var(--font-line-height);
+  color: var(--text-color);
 }
 
 .btn {
@@ -184,3 +188,28 @@ header .container {
 header .btn {
   margin-top: 40px;
 }
+
+/* Видео секция */
+
+main .section-video {
+  height: 805px;
+  background-color: var(--white);
+}
+
+.section-video .container {
+  align-items: center;
+}
+
+.section-video h2 {
+  text-align: center;
+}
+
+.section-video p {
+  margin: 30px auto;
+}
+
+.video {
+  margin-bottom: -200px;
+  filter: drop-shadow(0 16px 32px rgba(0, 0, 0, 0.15));
+}
+
