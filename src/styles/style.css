@@ -58,13 +58,13 @@ h4 {
   margin: 0;
 }
 
-/* Для всех эелементов */
+/* Для всех элементов */
 
 body {
   padding: 0;
   margin: 0;
   overflow-x: hidden;
-  color: var(--text);
+  color: var(--text-color);
   font-size: var(--font-size);
   font-family: var(--main-font);
 }
@@ -85,6 +85,11 @@ h3 {
 
 .background-ligth {
   background-color: var(--light);
+}
+
+.background-dark {
+  background-color: var(--brown);
+  color: var(--white);
 }
 
 .background::before {
@@ -155,7 +160,6 @@ h3 {
 p {
   font-size: var(--font-size);
   line-height: var(--font-line-height);
-  color: var(--text-color);
 }
 
 .btn {
@@ -273,18 +277,20 @@ main .section-video {
   color: var(--white);
 }
 
-.card:hover > p {
-  color: var(--white);
-}
-
 /* Основные секции */
 
 .name-block {
   display: flex;
 }
 
-.first-img {
+.left-img {
   margin-right: 30px;
+  vertical-align: middle;
+  filter: drop-shadow(0px 16px 32px rgba(0, 0, 0, 0.15));
+}
+
+.rigth-img {
+  margin-left: 30px;
   vertical-align: middle;
   filter: drop-shadow(0px 16px 32px rgba(0, 0, 0, 0.15));
 }
@@ -292,7 +298,14 @@ main .section-video {
 .title {
   font-size: 24px;
   font-family: var(--header-font);
+}
+
+.background-ligth .title {
   color: var(--translucent-dark);
+}
+
+.background-dark .title {
+  color: var(--translucent-white);
 }
 
 .description {
@@ -303,16 +316,23 @@ main .section-video {
 }
 
 .header-background {
-  background-color: var(--brown);
   padding: 5px 10px;
   margin: 100px 0 20px 0;
-
 }
 
 .header-background h4 {
   font-size: 14px;
-  color: var(--white);
   text-transform: uppercase;
   font-family: var(--main-font-bold);
   line-height: var(--header-line-height);
+}
+
+.background-ligth .header-background {
+  color: var(--white);
+  background-color: var(--brown);
+}
+
+.background-dark .header-background {
+  color: var(--brown);
+  background-color: var(--white);
 }
