@@ -13,7 +13,7 @@
 
 @font-face {
   font-weight: 700;
-  font-family: "Open Sans";
+  font-family: "Open Sans Bold";
   src: url("../fonts/OpenSans-Bold.ttf");
 }
 
@@ -31,6 +31,7 @@
   --blue: #1085c5;
   /* Шрифты */
   --main-font: "Open Sans";
+  --main-font-bold: "Open Sans Bold";
   --header-font: "Neucha";
   --font-size: 16px;
   --font-line-height: 1.6em;
@@ -80,7 +81,10 @@ h3 {
 
 .background {
   position: relative;
-  background-attachment: fixed;
+}
+
+.background-ligth {
+  background-color: var(--light);
 }
 
 .background::before {
@@ -173,10 +177,6 @@ p {
 
 /* Заголовок */
 
-header {
-  background-color: var(--light);
-}
-
 .header-img {
   position: absolute;
   top: 55px;
@@ -249,7 +249,7 @@ main .section-video {
   margin-right: 0;
 }
 
-.card:nth-child(n+4) {
+.card:nth-child(n + 4) {
   margin-top: 20px;
 }
 
@@ -275,4 +275,44 @@ main .section-video {
 
 .card:hover > p {
   color: var(--white);
+}
+
+/* Основные секции */
+
+.name-block {
+  display: flex;
+}
+
+.first-img {
+  margin-right: 30px;
+  vertical-align: middle;
+  filter: drop-shadow(0px 16px 32px rgba(0, 0, 0, 0.15));
+}
+
+.title {
+  font-size: 24px;
+  font-family: var(--header-font);
+  color: var(--translucent-dark);
+}
+
+.description {
+  margin-top: 30px;
+  font-size: 34px;
+  font-family: var(--header-font);
+  line-height: var(--header-line-height);
+}
+
+.header-background {
+  background-color: var(--brown);
+  padding: 5px 10px;
+  margin: 100px 0 20px 0;
+
+}
+
+.header-background h4 {
+  font-size: 14px;
+  color: var(--white);
+  text-transform: uppercase;
+  font-family: var(--main-font-bold);
+  line-height: var(--header-line-height);
 }
