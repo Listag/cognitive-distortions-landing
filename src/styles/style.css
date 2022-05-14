@@ -58,6 +58,11 @@ h4 {
   margin: 0;
 }
 
+button, input {
+  border: none;
+  padding: 0;
+}
+
 /* Для всех элементов */
 
 body {
@@ -158,7 +163,7 @@ h3 {
 }
 
 p {
-  font-size: var(--font-size);
+  /* font-size: var(--font-size); */
   line-height: var(--font-line-height);
 }
 
@@ -172,7 +177,6 @@ p {
 
   background-color: var(--main);
   cursor: pointer;
-  margin-top: 20px;
 }
 
 .btn:hover {
@@ -339,4 +343,87 @@ main .section-video {
 
 .indent {
   margin: 1em 0;
+}
+
+/* Подвал */
+
+.subscribe-block {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: var(--main-dark);
+  height: 190px;
+  color: var(--white);
+  padding: 0 55px;
+}
+
+.subscribe-text {
+  font-size: 34px;
+  font-family: var(--header-font);
+  line-height: var(--header-line-height);
+}
+
+.email-block {
+  box-sizing: border-box;
+  width: 50%;
+  padding-left: 15px;
+}
+
+.email-text {
+  font-size: 18px;
+  margin-bottom: 9px;
+}
+
+.subscribe-form {
+  display: flex;
+  width: 100%;
+}
+
+.subscribe-form input {
+  height: 50px;
+  flex-grow: 2;
+  padding-left: 15px;
+}
+
+.subscribe-form .btn {
+  width: 70px;
+  height: 50px;
+}
+
+.subscribe-form .btn::before {
+  display: block;
+
+  width: 24px;
+  height: 24px;
+
+  background-image: url(/public/static/send.svg);
+
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  content: "";
+}
+
+.subscribe-notice {
+  font-size: 12px;
+  margin-top: 3px;
+}
+
+.subscribe-notice a {
+  text-decoration: underline;
+}
+
+.copyright {
+  margin-top: 76px;
+  font-size: 14px;
+  text-align: center;
+}
+
+.copyright p {
+  margin-bottom: 16px;
+}
+
+.copyright a {
+  color: var(--blue);
+  text-decoration: underline;
 }
