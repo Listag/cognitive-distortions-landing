@@ -9,7 +9,7 @@
 3. Настроить и научиться депроить через сервис Serge.
 4. Ознакоиться и применить на практике подходы OOCSS и Atomic CSS.
 
-![Image alt]()
+![Image alt](https://github.com/Listag/cognitive-distortions-landing/blob/main/public/static/README.png)
 
 ## Ссылка на проект
 
