@@ -7,7 +7,7 @@
 1. Сверстать полноценный макет. Использовать flex и позиционирование.
 2. Потренировать git на практике проекта.
 3. Настроить и научиться депроить через сервис Serge.
-4. Ознакомиться с основными методологиями верстки, применить на практике OOCSS.
+4. Ознакомиться с основными методологиями верстки (OOCSS, SMACSS, BEM, Atomic CSS), применить на практике OOCSS.
 
 ![Image alt](https://github.com/Listag/cognitive-distortions-landing/blob/main/src/public/static/README.png)
 
