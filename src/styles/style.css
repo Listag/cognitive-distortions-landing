@@ -1,7 +1,7 @@
 /** CSS STYLE **/
 @font-face {
   font-weight: 400;
-  font-family: "Neucha";
+  font-family: 'Neucha';
   src: url("../fonts/Neucha-Regular.ttf");
 }
 
@@ -42,7 +42,7 @@
   --h2-size: 60px;
   --h3-size: 34px;
   /* Секции */
-  --max-content-width: 1110px
+  --max-content-width: 1110px;
 }
 
 /* Стили браузера  */
@@ -60,7 +60,8 @@ h4 {
   margin: 0;
 }
 
-button, input {
+button,
+input {
   border: none;
   padding: 0;
 }
