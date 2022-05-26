@@ -1,11 +1,22 @@
 ## Конитивные искажения
 
-Проект Хекслета, цель которого создать с нуля лендинг, используя только html и сss. Макет можно посомтреть здесь: https://www.figma.com/file/qV9FZGELdeKMsk63QLiKXY/Hexlet-LayoutDesigner-Project.-Cognitive-Biases?node-id=0%3A1
+Первый проект в профессии верстальщик на [Хекслете](https://ru.hexlet.io/programs/layout-designer/projects/58) является лендингом, описывающий распространённые когнитивные искажения в программировании. Это самые распространённые проблемы, с которыми сталкиваются многие разработчики в самые различные периоды своей карьеры. 
+
+## Цели
+
+1. Сверстать полноценный макет. Использовать flex и позиционирование.  
+2. Потренировать git на практике проекта.
+3. Настроить и научиться депроить через сервис Serge.
+4. Ознакоиться и применить на практике подходы OOCSS и Atomic CSS.
+
+![Image alt]()
+
+## Ссылка на проект
+
+
 
 ### Hexlet tests and linter status:
 
 [![Actions Status](https://github.com/Listag/layout-designer-project-lvl1/workflows/hexlet-check/badge.svg)](https://github.com/Listag/layout-designer-project-lvl1/actions)
 
-### Surge
 
-https://equable-mountain.surge.sh/
