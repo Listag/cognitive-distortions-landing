@@ -29,6 +29,7 @@
   --translucent-dark: #908d8b;
   --brown: #b09a81;
   --blue: #1085c5;
+
   /* Шрифты */
   --main-font: "Open Sans";
   --main-font-bold: "Open Sans Bold";
@@ -36,11 +37,13 @@
   --font-size: 16px;
   --font-line-height: 1.6em;
   --text-color: #2a2626;
+
   /* Заголовки */
   --header-line-height: 1.2em;
   --h1-size: 72px;
   --h2-size: 60px;
   --h3-size: 34px;
+
   /* Секции */
   --max-content-width: 1110px;
 }
@@ -56,37 +59,40 @@ h1,
 h2,
 h3,
 h4 {
-  padding: 0;
   margin: 0;
+  padding: 0;
 }
 
 button,
 input {
-  border: none;
   padding: 0;
+
+  border: none;
 }
 
 /* Для всех элементов */
 
 body {
-  padding: 0;
   margin: 0;
+  padding: 0;
   overflow-x: hidden;
+
   color: var(--text-color);
+  font-weight: 400;
   font-size: var(--font-size);
   font-family: var(--main-font);
   line-height: var(--font-line-height);
-  font-weight: 400;
 }
 
 h1,
 h2,
 h3 {
   z-index: 1;
-  font-family: var(--header-font);
-  font-weight: 400;
-  line-height: var(--header-line-height);
+
   color: var(--main);
+  font-weight: 400;
+  font-family: var(--header-font);
+  line-height: var(--header-line-height);
 }
 
 .background {
@@ -98,8 +104,9 @@ h3 {
 }
 
 .background-dark {
-  background-color: var(--brown);
   color: var(--white);
+
+  background-color: var(--brown);
 }
 
 .background::before {
@@ -119,11 +126,11 @@ h3 {
 
 .container {
   position: relative;
-  width: 1110px;
 
   display: flex;
   flex-direction: column;
   box-sizing: border-box;
+  width: 1110px;
   max-width: var(--max-content-width);
   margin: 0 auto;
   padding: 100px 0;
@@ -132,10 +139,11 @@ h3 {
 .text-columns {
   display: flex;
   flex-direction: row;
-  font-family: "Open Sans";
-  font-style: normal;
+
   font-weight: 400;
   font-size: 16px;
+  font-family: "Open Sans", sans-serif;
+  font-style: normal;
   line-height: 26px;
 }
 
@@ -174,6 +182,7 @@ p {
 .btn {
   display: inline-block;
   padding: 11px 24px;
+
   color: var(--white);
   font-weight: 700;
   text-transform: uppercase;
@@ -181,10 +190,6 @@ p {
 
   background-color: var(--main);
   cursor: pointer;
-}
-
-.btn:hover {
-  background-color: var(--main-hover);
 }
 
 /* Заголовок */
@@ -205,10 +210,15 @@ header .btn {
   margin-top: 40px;
 }
 
+.btn:hover {
+  background-color: var(--main-hover);
+}
+
 /* Видео секция */
 
 main .section-video {
   height: 805px;
+
   background-color: var(--white);
 }
 
@@ -226,7 +236,8 @@ main .section-video {
 
 .video {
   margin-bottom: -200px;
-  filter: drop-shadow(0 16px 32px rgba(0, 0, 0, 0.15));
+
+  filter: drop-shadow(0 16px 32px rgb(0 0 0 / 15%));
 }
 
 /* Навигация */
@@ -236,8 +247,7 @@ main .section-video {
 }
 
 #navigation .container {
-  flex-direction: row;
-  flex-wrap: wrap;
+  flex-flow: row wrap;
   align-content: flex-start;
   padding-top: 200px;
 }
@@ -252,8 +262,9 @@ main .section-video {
 }
 
 .card {
-  padding: 24px;
   box-sizing: border-box;
+  padding: 24px;
+
   background-color: var(--light);
 }
 
@@ -267,10 +278,11 @@ main .section-video {
 
 .number {
   display: inline-block;
-  font-size: 64px;
-  line-height: 1;
-  font-family: var(--header-font);
   margin-bottom: 40px;
+
+  font-size: 64px;
+  font-family: var(--header-font);
+  line-height: 1;
 }
 
 .card h3 {
@@ -293,14 +305,18 @@ main .section-video {
 
 .left-img {
   margin-right: 30px;
+
   vertical-align: middle;
-  filter: drop-shadow(0px 16px 32px rgba(0, 0, 0, 0.15));
+
+  filter: drop-shadow(0 16px 32px rgb(0 0 0 / 15%));
 }
 
 .right-img {
   margin-left: 30px;
+
   vertical-align: middle;
-  filter: drop-shadow(0px 16px 32px rgba(0, 0, 0, 0.15));
+
+  filter: drop-shadow(0 16px 32px rgb(0 0 0 / 15%));
 }
 
 .title {
@@ -318,30 +334,33 @@ main .section-video {
 
 .description {
   margin-top: 30px;
+
   font-size: 34px;
   font-family: var(--header-font);
   line-height: var(--header-line-height);
 }
 
 .header-background {
+  margin: 100px 0 20px;
   padding: 5px 10px;
-  margin: 100px 0 20px 0;
 }
 
 .header-background h4 {
   font-size: 14px;
-  text-transform: uppercase;
   font-family: var(--main-font-bold);
   line-height: var(--header-line-height);
+  text-transform: uppercase;
 }
 
 .background-ligth .header-background {
   color: var(--white);
+
   background-color: var(--brown);
 }
 
 .background-dark .header-background {
   color: var(--brown);
+
   background-color: var(--white);
 }
 
@@ -353,12 +372,14 @@ main .section-video {
 
 .subscribe-block {
   display: flex;
-  justify-content: space-between;
   align-items: center;
-  background-color: var(--main-dark);
+  justify-content: space-between;
   height: 190px;
-  color: var(--white);
   padding: 0 55px;
+
+  color: var(--white);
+
+  background-color: var(--main-dark);
 }
 
 .subscribe-text {
@@ -374,8 +395,9 @@ main .section-video {
 }
 
 .email-text {
-  font-size: 18px;
   margin-bottom: 9px;
+
+  font-size: 18px;
 }
 
 .subscribe-form {
@@ -384,8 +406,8 @@ main .section-video {
 }
 
 .subscribe-form input {
-  height: 50px;
   flex-grow: 2;
+  height: 50px;
   padding-left: 15px;
 }
 
@@ -400,7 +422,7 @@ main .section-video {
   width: 24px;
   height: 24px;
 
-  background-image: url(/public/static/send.svg);
+  background-image: url("/public/static/send.svg");
 
   background-repeat: no-repeat;
   background-size: cover;
@@ -409,8 +431,9 @@ main .section-video {
 }
 
 .subscribe-notice {
-  font-size: 12px;
   margin-top: 3px;
+
+  font-size: 12px;
 }
 
 .subscribe-notice a {
@@ -419,6 +442,7 @@ main .section-video {
 
 .copyright {
   margin-top: 76px;
+
   font-size: 14px;
   text-align: center;
 }
